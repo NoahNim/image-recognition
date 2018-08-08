@@ -53,6 +53,11 @@ module.exports = {
         options: {
           presets: ['es2015']
         }
+      },
+        {
+        parser: {
+        amd: false
+        }
       }
     ]
   }

@@ -40,7 +40,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "cloudmersive-image-api-client": "^1.1.1",
     "cloudmersive-validate-api-client": "^1.0.8",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
   }

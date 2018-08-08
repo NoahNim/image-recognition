@@ -1,4 +1,3 @@
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -36,8 +35,8 @@ module.exports = {
         ]
       },
       {
-          test: /\.js$/,
-          exclude: [
+        test: /\.js$/,
+        exclude: [
           /node_modules/,
           /spec/
         ],
@@ -54,14 +53,14 @@ module.exports = {
           presets: ['es2015']
         }
       },
-        {
+      {
         parser: {
-        amd: false
+          amd: false
         }
       },
       {
-      test: /\.(png|jp(e*)g|svg)$/,
-      use: [{
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [{
           loader: 'url-loader'
           // options: {
           //     limit: 8000, // Convert images < 8kb to base64 strings
@@ -69,6 +68,7 @@ module.exports = {
           // }
         }]
       }
-    ]
-  }
+    ],
+  },
+  target: 'node'
 };

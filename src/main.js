@@ -1,3 +1,8 @@
+import personOne from "./img/person-one.jpeg";
+
+var personOneImg = document.getElementById("person-one");
+personOneImg.src = personOne;
+
 var CloudmersiveValidateApiClient = require('cloudmersive-validate-api-client');
 
 var defaultClient = CloudmersiveValidateApiClient.ApiClient.instance;
